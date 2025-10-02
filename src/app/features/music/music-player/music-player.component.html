@@ -1,0 +1,33 @@
+<div class="audio-player">
+  <button mat-icon-button (click)="togglePlay()">
+    <mat-icon>{{ player.isPlaying ? "pause" : "play_arrow" }}</mat-icon>
+  </button>
+
+  <span>{{ formatTime(player.currentTime) }}</span>
+
+  <mat-slider
+    [min]="0"
+    [max]="player.duration"
+    (input)="onTimeChange()"
+    (change)="onTimeChangeEnd()"
+  >
+    <input matSliderThumb [(ngModel)]="player.currentTime" />
+  </mat-slider>
+
+  <span>{{ formatTime(player.duration) }}</span>
+
+  <div class="audio-player__change-music">
+    <button mat-icon-button (click)="prevAudio()">⏮</button>
+    <button mat-icon-button (click)="nextAudio()">⏭</button>
+  </div>
+
+  <div class="audio-player__volume">
+    <mat-slider [min]="0" [max]="100">
+      <input
+        matSliderThumb
+        [(ngModel)]="player.volume"
+        (input)="onVolumeChange()"
+      />
+    </mat-slider>
+  </div>
+</div>
