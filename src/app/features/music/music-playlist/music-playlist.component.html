@@ -1,0 +1,16 @@
+<div class="playlist-card">
+  <h3 class="playlist-title">Загруженные треки</h3>
+  <hr />
+
+  <ul class="track-list">
+    <li class="track-item" *ngFor="let track of tracks; let i = index">
+      <span class="track-name">{{ track.name }}</span>
+      <span class="track-actions">
+        <button class="play" (click)="playTrack(i)">
+          {{ isPlaying(i) ? "⏸" : "▶" }}
+        </button>
+        <button class="remove" (click)="removeTrack(i)">✖</button>
+      </span>
+    </li>
+  </ul>
+</div>

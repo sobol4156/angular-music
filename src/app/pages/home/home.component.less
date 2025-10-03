@@ -1,0 +1,26 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px); /* padding сверху + снизу */
+  padding: 30px 20px;
+}
+
+app-music-uploader {
+  margin: auto;
+  z-index: 1;
+}
+
+app-music-player {
+  margin-top: auto;
+  z-index: 1;
+}
+
+app-canvas-pulse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;   
+}

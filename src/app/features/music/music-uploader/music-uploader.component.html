@@ -1,0 +1,12 @@
+<div class="music-uploader">
+  <button mat-raised-button color="primary" (click)="fileInput.click()">
+    Выберите файл
+  </button>
+  <input #fileInput type="file" hidden (change)="onFileSelected($event)">
+
+  <span *ngIf="selectedFile" class="file-name">{{ selectedFile.name }}</span>
+
+  <button mat-raised-button color="accent" (click)="uploadFile()" [disabled]="!selectedFile">
+    Загрузить
+  </button>
+</div>
