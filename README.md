@@ -1,3 +1,6 @@
+Просто плеер на ангуляр. Адаптив не делал
+<img width="1263" height="948" alt="image" src="https://github.com/user-attachments/assets/5905b337-b89e-469f-9d3d-4fbfd8791abf" />
+
 # Practice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
