@@ -1,4 +1,4 @@
-Просто плеер на ангуляр. Адаптив не делал
+## Просто плеер на ангуляр. Адаптив не делал
 <img width="1263" height="948" alt="image" src="https://github.com/user-attachments/assets/5905b337-b89e-469f-9d3d-4fbfd8791abf" />
 
 # Practice
